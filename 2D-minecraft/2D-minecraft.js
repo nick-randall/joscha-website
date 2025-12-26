@@ -60,6 +60,7 @@ function setup() {
   }
 
   setInterval(saveWorld, 10000);
+      document.addEventListener('contextmenu', event => event.preventDefault());
 }
 
 // ================= DRAW =================

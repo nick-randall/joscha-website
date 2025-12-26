@@ -43,9 +43,9 @@ function keyPressed() {
 function draw() {
 
   if (rectgoingRight) {
-    rectX += 5;
+    rectX += 10;
   } else {
-    rectX -= 5;
+    rectX -= 10;
   }
 
   if (rectX > width - 60) {
@@ -56,9 +56,9 @@ function draw() {
   }
 
    if (rectgoingUp) {
-    rectY -= 5;
+    rectY -= 10;
   } else {
-    rectY += 5;
+    rectY += 10;
   }
 
   if (rectY > height - 60) {
