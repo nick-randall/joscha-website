@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>server</title>
+</head>
+<body>
+    <button id="fetch-button">fetch</button>
+    <script>
+        async function fetchAndConsoleLogRes(res) {
+            const json = await res.json()
+            console.log(json);
+        }
+
+        const button = document.getElementById("fetch-button");
+        if (button) {
+            button.addEventListener("click", function(){
+                fetch('http://localhost:2315/get-number-of-pokemons')
+                    .then(fetchAndConsoleLogRes)
+                    .catch(err => console.error(err));
+            });
+        }
+    </script>
+</body>
+</html>
