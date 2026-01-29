@@ -16,7 +16,7 @@
         const button = document.getElementById("fetch-button");
         if (button) {
             button.addEventListener("click", function(){
-                fetch('http://localhost:2315/get-number-of-pokemons')
+                fetch('http://192.168.178.154:2315/get-number-of-pokemons')
                     .then(fetchAndConsoleLogRes)
                     .catch(err => console.error(err));
             });

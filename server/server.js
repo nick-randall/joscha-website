@@ -61,9 +61,15 @@ app.get("/get-all-creepers", function (_req, res) {
   all_creepers += "</ul>";
   res.send(all_creepers);
   });
-
-
+app.get("/diamonds" , function (_req, res) {
+  res.send("<button id='leftbutton'>left</button>");
+  res.send("<button id='rightbutton'>right</button>");
+  res.send("<script src='stuff.js'></script>")
+});
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
+
+
+
