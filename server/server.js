@@ -32,7 +32,7 @@ app.get("/get-number-of-pokemons", function (_req, res) {
   );
 });
 
-app.get("/add-new-creeper", function (req, res) {
+app.get("192.168.178.154:2315/add-new-creeper", function (req, res) {
   const creeper = {};
   creeper.name = req.query["creeper-name"];
   creeper.speed = req.query["speed"];
