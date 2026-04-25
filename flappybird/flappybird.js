@@ -54,7 +54,7 @@ function applyDifficulty(level) {
 function resetGame() {
     lives = difficultySettings[selectedDifficulty].lives;
     score = 0;
-    flappybirdheight = height - birdSize;
+    flappybirdheight = (height - birdSize) / 2;
     birdVelocity = 0;
     obstacles = [];
     addObstacle(width * 0.75);
