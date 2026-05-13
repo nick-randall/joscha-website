@@ -12,6 +12,7 @@ let pressedb = false;
 let bcounter = 1;
 
 
+
 function jump() {
   bouncery = bouncery - 100;
   }
@@ -76,17 +77,3 @@ function draw() {
   fill(255, 255, 0);
   rect(bouncerx, bouncery, 100, 200);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
